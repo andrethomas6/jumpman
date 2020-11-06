@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  background: steelblue; }
+
+.header {
+  display: flex;
+  justify-content: center; }
+  .header h1 {
+    font-size: 5rem; }
+
+#game {
+  background: #f4f4f4;
+  border: 1px solid #333;
+  width: 1000px;
+  height: 500px;
+  margin: 30px auto;
+  overflow: hidden; }
+
+.player {
+  position: relative;
+  top: 425px;
+  left: 10px;
+  width: 25px;
+  height: 75px;
+  background: maroon; }
+
+.jump {
+  animation: 1000ms jump; }
+
+.enemy {
+  position: relative;
+  top: 375px;
+  left: 975px;
+  height: 50px;
+  width: 25px;
+  background: chocolate;
+  animation: 2.4s enemy linear infinite; }
+
+@keyframes enemy {
+  0% {
+    left: 975px; }
+  100% {
+    left: -25px; } }
+
+@keyframes jump {
+  0% {
+    top: 425px; }
+  50% {
+    top: 300px; }
+  100% {
+    top: 425px; } }
