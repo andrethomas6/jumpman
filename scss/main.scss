@@ -33,6 +33,7 @@ body {
   width: 25px;
   height: 75px;
   background: maroon;
+  border-radius: 50% 50% 10% 10%;
 }
 
 .jump {
@@ -44,9 +45,11 @@ body {
   top: 375px;
   left: 975px;
   height: 50px;
-  width: 25px;
-  background: chocolate;
-  animation: 2.4s enemy linear infinite;
+  width: 65px;
+  background: #333;
+  animation: 1.5s enemy linear infinite;
+  border-radius: 50% 0 0 50%;
+  box-shadow: 5px 0 10px gold, 15px 0 20px crimson;
 }
 
 @keyframes enemy {
@@ -55,7 +58,7 @@ body {
   }
 
   100% {
-    left: -25px
+    left: -65px
   }
 }
 
@@ -63,9 +66,11 @@ body {
   0% {
     top: 425px;
   }
+
   50% {
     top: 300px;
   }
+
   100% {
     top: 425px;
   }
